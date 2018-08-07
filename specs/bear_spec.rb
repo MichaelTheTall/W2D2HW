@@ -25,6 +25,11 @@ class BearTest < MiniTest::Test
     assert_equal("Yogi", @bear.name)
   end
 
+  def test_bear_type
+    assert_equal("Grizzly", @bear.type)
+
+  end
+
   def test_bear_can_roar
     assert_equal("I'm smarter than the av-er-age bear!", @bear.roar)
   end
